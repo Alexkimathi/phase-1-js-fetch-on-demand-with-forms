@@ -5,7 +5,7 @@ const init = () => {
         event.preventDefault();
 
         const input = document.querySelector('input#searchByID');
-        console.log(event);
+        // console.log(event);
 
         fetch(`http://localhost:3000/movies/${input.value}`)
         .then(response => response.json())
